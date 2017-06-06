@@ -28,6 +28,8 @@ __END__
 
 =encoding utf-8
 
+=for stopwords msgpack
+
 =head1 NAME
 
 Data::MessagePack::Types - Utility of value type for Data::MessagePack

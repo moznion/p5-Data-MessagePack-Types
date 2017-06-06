@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/moznion/p5-Data-MessagePack-Types.svg?branch=master)](https://travis-ci.org/moznion/p5-Data-MessagePack-Types)
 # NAME
 
 Data::MessagePack::Types - Utility of value type for Data::MessagePack

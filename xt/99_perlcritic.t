@@ -16,5 +16,3 @@ if ($@) {
 Test::Perl::Critic->import(-exclude => ['ProhibitSubroutinePrototypes', 'ProhibitExplicitReturnUndef']);
 Test::Perl::Critic::all_critic_ok();
 
-done_testing;
-

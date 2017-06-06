@@ -56,5 +56,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/moznion/p5-Data-MessagePack-Types/issues"
+      },
+      "homepage" : "https://github.com/moznion/p5-Data-MessagePack-Types",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/moznion/p5-Data-MessagePack-Types.git",
+         "web" : "https://github.com/moznion/p5-Data-MessagePack-Types"
+      }
+   },
    "version" : "0.01"
 }
