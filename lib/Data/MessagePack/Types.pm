@@ -28,70 +28,15 @@ __END__
 
 =encoding utf-8
 
-=for stopwords msgpack
+=for stopwords MessagePack
 
 =head1 NAME
 
 Data::MessagePack::Types - Utility of value type for Data::MessagePack
 
-=head1 SYNOPSIS
+=head1 STOP!!!
 
-    use Data::MessagePack;
-    use Data::MessagePack::Types;
-
-    my $data = +{
-        foo => msgpack_number "123", # <= force number type (i.e. 123)
-        bar => msgpack_string 123, # <= force string type (i.e. '123')
-        buz => msgpack_bool 1, # <= force boolean type (i.e. Data::MessagePack::true)
-        qux => msgpack_bool 0, # <= force boolean type (i.e. Data::MessagePack::false)
-    };
-
-    my $mp = Data::MessagePack->new();
-    my $packed = $mp->pack($data);
-
-=head1 DESCRIPTION
-
-Data::MessagePack::Types is an utility of value type for Data::MessagePack.
-
-This package provides some functions to convert your type of values to be suitable to msgpack's one.
-
-=head1 FUNCTIONS
-
-=head2 C<msgpack_number($val): Number>
-
-Force C<$val> to be number type. If C<$val> is C<'123'> that is string type, return value of this function will be C<123> that is a pure number (not a string).
-
-This function is exported.
-
-=head2 C<msgpack_string($val): String>
-
-Force C<$val> to be string type. If C<$val> is C<123> that is number type, return value of this function will be C<'123'> that is a string (not a number).
-
-This function is exported.
-
-=head2 C<msgpack_bool($val): Data::MessagePack::Boolean>
-
-Force C<$val> to be boolean type. If C<$val> is false value of perl (e.g. C<0>, C<undef>, C<''>), return value of this function will be C<Data::MessagePack::Boolean> that represents false. Conversely, if C<$val> is true value of perl, this function returns C<Data::MessagePack::Boolean> that represents true.
-
-This function is exported.
-
-=head1 NOTES
-
-If C<prefer_integer> is set to instance of L<Data::MessagePack>, this package will be neutralized.
-
-=head1 THANKS
-
-This package is inspired by L<JSON::Types> and taken almost code from it.
-
-=head1 SEE ALSO
-
-=over 4
-
-=item * L<Data::MessagePack>
-
-=item * L<JSON::Types>
-
-=back
+You B<DON'T> have to use this library. Don't worry, please use L<JSON::Types>. That library works correctly even if target is MessagePack.
 
 =head1 LICENSE
 
